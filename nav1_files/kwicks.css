@@ -1,0 +1,92 @@
+body {
+	background-image: none;
+	background-color: #fff;
+	padding: 0 0 0 50px;
+	text-align: left;
+	color: 333;
+}
+
+h1 {
+	margin: 30px 0 10px 0;
+	padding: 0;
+	color: white;
+	font-size: 1.5em;
+}
+
+.returnToKwicks {
+	display:block;
+	border:1px dashed #888;
+	padding:5px;
+	float:right;
+}
+.returnToKwicks:hover {
+	background-color: #5e5e76;
+	text-decoration: none;
+	color: #aaa;
+}
+
+/* defaults for all examples */
+.kwicks {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.kwicks li{
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	cursor: pointer;
+}
+
+/* example 1 */
+#example1 .kwicks li{
+	float: left;
+	width: 125px;
+	height: 100px;
+	margin-right: 5px;
+}
+#example1 #kwick1 { 
+	background-color: #53b388;
+	background-image: url('menu_1.gif');
+}
+#example1 #kwick2 {
+	background-color: #5a69a9;
+	background-image: url('menu_2.gif');
+}
+#example1 #kwick3 {
+	background-color: #c26468;
+	background-image: url('menu_1.gif');
+}
+#example1 #kwick4 { 
+	background-color: #bf7cc7;
+	background-image: url('menu_2.gif');
+	margin-right: none;
+}
+#example1 #kwick5 { 
+	background-color: #bf7cc7;
+	background-image: url('menu_1.gif');
+	margin-right: none;
+}
+#example1 #kwick6 { 
+	background-color: #bf7cc7;
+	background-image: url('menu_2.gif');
+	margin-right: none;
+}
+
+.sub_kwicks{
+	display: block;
+	position: fixed;
+	visibility: visible;
+	width: 600px;
+	margin-top: 0px;
+	list-style-type: none;
+	z-index: 12;
+}
+.sub_kwicks li {
+	float: left;
+	display: none;
+}
+.sub_kwicks li.active {
+	display: block;
+}
